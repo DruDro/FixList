@@ -1,0 +1,17 @@
+[OPTIONS]
+Title=FixList Reference
+Compatibility=1.1 or later
+Compiled file=FixList.chm
+Contents file=FixList.hhc
+Index file=FixList.hhk
+Default topic=articles\overview.htm
+Display compile progress=Yes
+Error log file=log.txt
+Full-text search=Yes
+Language=0x409 English (United States)
+
+
+[FILES]
+
+[INFOTYPES]
+

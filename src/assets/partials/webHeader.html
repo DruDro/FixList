@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<HTML>
+
+<HEAD>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FixList Reference</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <style>
+        :focus {
+            outline: 0;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        body {
+            display: block;
+            width: 100vw;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .wrapper {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            height: 100vh;
+            width: 100%;
+            display: table;
+            table-layout: fixed;
+        }
+
+        .overlay {
+            display: none;
+            content: "";
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+            background: rgba(0, 0, 0, .3);
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: all .3s ease-in-out;
+        }
+
+        .toc {
+            display: table-cell;
+            width: 400px;
+            height: 100vh;
+            background: #f5f5f5;
+            padding: 0 0 15px;
+            resize: horizontal;
+            min-width: 300px;
+            vertical-align: top;
+            overflow: auto;
+            position:relative;
+            z-index:2;
+            transition: all .3s ease-in-out;
+                box-shadow: 0 0 40px -15px rgba(0, 0, 0, 0.6);
+        }
+
+        .toc:hover {
+            background: #ebebeb;
+        }
+
+        .toc-header {
+            display: table;
+            width: 100%;
+        }
+
+        .toc h2 {
+            padding: 0;
+            display: table-cell;
+            text-align:center;
+            margin: 0;
+            transition: all .15s ease-in-out;
+        }
+
+        .toc h2 a {
+            display: block;
+            padding: 15px;
+            font-weight: 400;
+            text-decoration: none;
+            color: #454545;
+        }
+
+        .toc h2 a:hover,
+        .toc h2 a:focus {
+            text-decoration: underline;
+        }
+
+        .toc h2 a.active {
+            background: #fff;
+        }
+
+        .toc ul {
+            margin: 0;
+            padding: 0;
+            display: none;
+            list-style: none;
+        }
+
+        .toc ul li {
+            position: relative;
+            padding: 0 0 0 18px;
+        }
+
+        .toc>ul {
+            margin: 0;
+            padding: 15px;
+            display: block;
+            max-height: calc(100vh - 68px);
+            overflow: auto;
+            background: #fff;
+            display: block;
+            position: relative;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .toc ul a {
+            text-decoration: none;
+            padding: 4px 0;
+            display: block;
+            color: #454545;
+            cursor:pointer
+        }
+
+        .toc ul a:hover,
+        .toc ul a:focus {
+            text-decoration: underline;
+        }
+
+        .toc li>i {
+            font-style: normal;
+            font-weight: 700;
+            font-size: .9em;
+            color: inherit;
+            display: block;
+            text-align: center;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            left: -11px;
+            top: -2px;
+            background-size: 50%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(./assets/images/icons/icons8-overview.png);
+        }
+
+        .toc li.folder>i {
+            cursor: pointer;
+        }
+
+        .toc li.folder.open>i {
+            background-image: url(./assets/images/icons/icons8-open.png);
+        }
+
+        .toc li.folder.closed>i {
+            background-image: url(./assets/images/icons/icons8-folder.png);
+        }
+
+        #index {
+            display: none;
+        }
+
+        .toc-toggle {
+            display: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 0 25px 25px 0;
+            box-shadow: 3px 0 5px 0px rgba(0, 0, 0, .5);
+            background-color: rgba(235, 235, 235, .8);
+            color: #454545;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 80%;
+            right: -40px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            transition: all .2s ease-in-out;
+            user-select: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .frameholder {
+            display: table-cell;
+            position: relative;
+            vertical-align: top;
+            overflow: hidden;
+            -webkit-overflow-scrolling: touch;
+            overflow: auto;
+            height:100vh;
+        }
+
+        #article {
+            display: block;
+            height: 100%;
+            width: 100%;
+            border: 0;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            -webkit-overflow-scrolling: touch;
+            overflow: auto;
+        }
+
+        @media print {
+            .toc {
+                display: none;
+            }
+            html,
+            body,
+            .wrapper,
+            .frameholder,
+            #article {
+                min-height: 100vh;
+                height: auto !important;
+                display: block !important;
+                overflow: auto !important;
+            }
+        }
+
+        @media screen and (max-width:1023px) {
+            .toc {
+                position: fixed;
+                left: 0;
+                top: 0;
+                display: block;
+                z-index: 2;
+                overflow: visible;
+                resize: none;
+                width: 280px !important;
+                min-width: 0;
+                box-shadow: 0 0 25px 5px rgba(0, 0, 0, .5);
+            }
+            .overlay {
+                display: block;
+            }
+            .overlay.hidden {
+                opacity: 0;
+                visibility: hidden;
+            }
+            .toc.hidden {
+                left: -280px;
+                box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+            }
+            .toc-toggle {
+                display: block;
+            }
+            .toc-toggle:hover {
+                background-color: rgba(235, 235, 235, 1);
+                box-shadow: 4px 0 6px 0px rgba(0, 0, 0, .5);
+            }
+            .toc-toggle:active {
+                box-shadow: 1px 0 2px 0px rgba(0, 0, 0, .3);
+            }
+            .toc>ul {
+                max-height: calc(100vh - 48px);
+            }
+            .frameholder {
+                display: block;
+                position: relative;
+                z-index: 0;
+                height: 100vh;
+            }
+        }
+    </style>
+</HEAD>
+
+<body>
+    <div class="wrapper">
+        <div class="toc hidden">
+            <a href="#" class="toc-toggle">☰</a>
+            <div class="toc-header">
+                <h2>
+                    <a href="#toc" class="active">Contents</a>
+                </h2>
+                <h2>
+                    <a href="#index">A&mdash;Z</a>
+                </h2>
+                <h2>
+                    <a href="" onclick="printFrame()" style="    
+                display: inline-block;
+                text-decoration: none;
+                background-size: 70%;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url(./assets/images/icons/icons8-print.png);">&nbsp;</a>
+                </h2>
+            </div>
