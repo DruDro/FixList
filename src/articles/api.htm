@@ -1,0 +1,85 @@
+@@include('../assets/partials/header.html', { "productTitle":"FixList", "title":"Features" })
+
+<div class="article__content">
+    <ul>
+        <li>public WishlistDTO GetWishlistFromInvitation()</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetWishlistProducts(int wishlistId)</li>
+        <li>public WishlistDTO GetFixlist(int id)</li>
+        <li>public IEnumerable&lt;WishlistDTO&gt; GetWishlists()</li>
+        <li>public WishlistDTO AddWishlist(WishlistDTO wishlist, List&lt;int&gt; friendsIds)</li>
+        <li>public List&lt;FixlistCategoriesDTO&gt; GetFixlistCaegories(int fixlistId)</li>
+        <li>public BaseDTO SaveFixlistCategories(int fixlistId, List&lt;int&gt; categoryId)</li>
+        <li>public async Task&lt;bool&gt; DeleteWishlist(int wishlistId)</li>
+        <li>public void UpdateWishlistSelectedAt(int wishlistId)</li>
+        <li>public void UpdateChatSelectedAt(int chatId)</li>
+        <li>public BaseDTO AcceptSharedWishlist(int wishlistId)</li>
+        <li>public List&lt;KeyValuePair&lt;string, int&gt;&gt; GetWishlistAccessLevels()</li>
+        <li>public BaseDTO RemoveParticipant(int userId, int wishlistId)</li>
+        <li>public async Task&lt;BaseDTO&gt; ShareWishlistWithFriends(WishlistDTO wishlistDto, List&lt;int&gt; friendsIds)</li>
+        <li>public List&lt;int&gt; GetWishlistSharedUsers(int wishlistId)</li>
+        <li>public async Task&lt;CollectionDTO&lt;ChatDTO&gt;&gt; AddProduct(List&lt;int&gt; wishlistIds, Product p)</li>
+        <li>public BaseDTO UpdateProductAccepted(int productId, bool value)</li>
+        <li>public ProductDTO GetProduct(int productId)</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetProducts(int wishlistId)</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetProductsArchive(int skip)</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetProducts(int wishlistId, int skip)</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetFeed()</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetFeed(int skip)</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetFeedFromFriends()</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetFeedFromFriends(int skip)</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetFeedPopular()</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetFeedPopular(int skip)</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetInspo()</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetInspo(int skip)</li>
+        <li>public IEnumerable&lt;ProductDTO&gt; GetTop()</li>
+        <li>public async Task&lt;CollectionDTO&lt;ChatDTO&gt;&gt; ShareProductToWishlists(ProductDTO productDTO, List&lt;int&gt;
+            wishlistIds)</li>
+        <li>public CollectionDTO&lt;ChatDTO&gt; ShareProductWithFriends(ProductDTO productDTO, List&lt;int&gt; friendsIds)</li>
+        <li>public async Task&lt;bool&gt; Like(int productId)</li>
+        <li>public async Task&lt;bool&gt; Dislike(int productId)</li>
+        <li>public async Task&lt;bool&gt; DeleteProduct(int productId, int wishlistId)</li>
+        <li>public async Task&lt;BaseDTO&gt; ChangeProductName(int productId, string newName)</li>
+        <li>public async Task&lt;BaseDTO&gt; ChangeProductHashtags(int productId, string newHashtags)</li>
+        <li>public IEnumerable&lt;int&gt; GetProductWishlists(int productId)</li>
+        <li>public BaseDTO SubmitComplaint(int productId)</li>
+        <li>public BaseDTO RegisterDevice(int userId, string deviceToken)</li>
+        <li>public BaseDTO UnregisterDevice(int userId, string deviceToken)</li>
+        <li>public IEnumerable&lt;UserDTO&gt; GetFriendsWithInvites()</li>
+        <li>public IEnumerable&lt;UserDTO&gt; GetFriends()</li>
+        <li>public IEnumerable&lt;UserDTO&gt; GetInvites()</li>
+        <li>public IEnumerable&lt;WishlistFriendDTO&gt; GetWishlistFriends(int wishlistId)</li>
+        <li>public bool AskForFriendship(int toUserId)</li>
+        <li>public bool AskForFriendships(List&lt;int&gt; userIds)</li>
+        <li>public BaseDTO AskForFriendshipByMail(List&lt;string&gt; emails)</li>
+        <li>public IEnumerable&lt;SearchUserDTO&gt; SearchFriends(string searchString)</li>
+        <li>public IEnumerable&lt;SearchUserDTO&gt; GetInvitableUsers(string searchString)</li>
+        <li>public IEnumerable&lt;SearchUserDTO&gt; GetUsersRelatedToWishlist(int wishlistId)</li>
+        <li>public UserDTO AcceptInvite(int fromUserId)</li>
+        <li>public void DeleteFriendship(int friendId)</li>
+        <li>public InvitationResultDTO SendInvitations(List&lt;string&gt; emails, List&lt;int&gt; swishlistIds, string message
+            = null, int? wishlistId = null, int? productId = null)</li>
+        <li>public ChatDTO GetChat(int productId, int wishlistId)</li>
+        <li>public IEnumerable&lt;ChatDTO&gt; GetChats()</li>
+        <li>public ChatMessagesDTO GetChatMessages(int chatId, int timeZoneOffset)</li>
+        <li>public IEnumerable&lt;MessageDTO&gt; GetMessages(int chatId, int earliestMessageId, string </li>searchString, int
+        timeZoneOffset = 0)</li>
+        <li>public async Task&lt;BaseDTO&gt; SendMessage(int chatId, string text, int timeZoneOffset, string temporaryId, List&lt;int&gt;
+            mentionedUserIds)</li>
+        <li>public async Task&lt;BaseDTO&gt; SendMessage(int chatId, string text, int timeZoneOffset, string temporaryId, List&lt;int&gt;
+            mentionedUserIds, string url)</li>
+        <li>public IEnumerable&lt;MessageDTO&gt; SearchStringInChat(int chatId, int currentMessageId, string searchString, int
+            timeZoneOffset = 0)</li>
+        <li>public BaseDTO DeleteMessage(int chatId, int messageId)</li>
+        <li>public void MarkMessagesAsReadBy(int chatId)</li>
+        <li>public IEnumerable&lt;ChatDTO&gt; GetChatsWithUser(int userId)</li>
+        <li>public UserDTO GetProfile()</li>
+        <li>public BaseDTO UpdateProfile(UserDTO user)</li>
+        <li>public UserDTO Login()</li>
+        <li>public override Task OnDisconnected(bool stopCalled)</li>
+        <li>public async Task&lt;ParseResultDTO&gt; ParseUrl(string url)</li>
+        <li>public void SkipTutorial()</li>
+    </ul>
+</div>
+
+
+@@include('../assets/partials/footer.html')

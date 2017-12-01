@@ -1,0 +1,63 @@
+@@include('../assets/partials/header.html', { "productTitle":"FixList", "title":"SendMessage", "type":"api" })
+
+
+
+
+<div class="article">
+
+    <div class="article__content">
+        <p>Sends a message to a chat</p>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/cube.png">Method</h3>
+        <p>
+            <span class="method get">POST</span>
+        </p>
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+        <ul>
+            <li>
+                <p>
+                    <b>chatId</b>
+                    <i>int</i>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>text</b>
+                    <i>string</i>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>timeZoneOffset</b>
+                    <i>int</i>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>temporaryId</b>
+                    <i>string</i>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>mentionedUserIds</b>
+                    <i>List&lt;int&gt;</i>
+                </p>
+            </li>
+        </ul>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/curly.png">
+            <a href="#" class="js-toggle-code collapsed">Signature</a>
+        </h3>
+        <pre class="js-pre collapsed"><code>public async Task&lt;BaseDTO&gt; SendMessage(int
+chatId, string text, int timeZoneOffset, string temporaryId, List&lt;int&gt; mentionedUserIds)</code></pre>
+    </div>
+
+
+</div>
+
+
+@@include('../assets/partials/footer.html')
