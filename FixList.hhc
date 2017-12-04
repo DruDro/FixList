@@ -17,16 +17,46 @@
 		<param name="Local" value="articles\features.htm">
 		</OBJECT>
 	<LI> <OBJECT type="text/sitemap">
-		<param name="Name" value="User Reference">
+		<param name="Name" value="Screenshots">
+		<param name="Local" value="articles\screenshots.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="User Flow">
+		<param name="Local" value="articles\flowchart.htm">
 		</OBJECT>
 		<UL>
 			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="Log In">
 				<param name="Local" value="articles\login.htm">
 				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Create a Fixlist">
+				<param name="Local" value="articles\create-fixlist.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Add a Photo">
+				<param name="Local" value="articles\add-photo.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Add Participants">
+				<param name="Local" value="articles\participants.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Discuss a Photo">
+				<param name="Local" value="articles\discuss.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Get Inspired">
+				<param name="Local" value="articles\inspo.htm">
+				</OBJECT>
+			<LI> <OBJECT type="text/sitemap">
+				<param name="Name" value="Mark Photo as Fixed">
+				<param name="Local" value="articles\mark-fixed.htm">
+				</OBJECT>
 		</UL>
 	<LI> <OBJECT type="text/sitemap">
 		<param name="Name" value="Developer Reference">
+		<param name="Local" value="articles\introduction.htm">
 		</OBJECT>
 		<UL>
 			<LI> <OBJECT type="text/sitemap">
@@ -34,16 +64,12 @@
 				<param name="Local" value="articles\improvements.htm">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
-				<param name="Name" value="Introduction">
-				<param name="Local" value="articles\introduction.htm">
-				</OBJECT>
-			<LI> <OBJECT type="text/sitemap">
 				<param name="Name" value="API">
 				<param name="Local" value="articles\api.htm">
 				</OBJECT>
 				<UL>				
 				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="SendMessage">
+					<param name="Name" value="SendMessage()">
 					<param name="Local" value="articles\SendMessage.htm">
 					</OBJECT>
 		</UL>
