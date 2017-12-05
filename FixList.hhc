@@ -12,14 +12,12 @@
 		<param name="Name" value="Overview">
 		<param name="Local" value="articles\overview.htm">
 		</OBJECT>
-	<LI> <OBJECT type="text/sitemap">
-		<param name="Name" value="Features">
-		<param name="Local" value="articles\features.htm">
-		</OBJECT>
-	<LI> <OBJECT type="text/sitemap">
-		<param name="Name" value="Screenshots">
-		<param name="Local" value="articles\screenshots.htm">
-		</OBJECT>
+		<UL>		
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Screenshots">
+			<param name="Local" value="articles\screenshots.htm">
+			</OBJECT>
+		</UL>
 	<LI> <OBJECT type="text/sitemap">
 		<param name="Name" value="User Flow">
 		<param name="Local" value="articles\flowchart.htm">
