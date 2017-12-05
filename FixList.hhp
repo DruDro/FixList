@@ -1,9 +1,9 @@
 [OPTIONS]
-Title=FixList Reference
+Title=Fixlist Reference
 Compatibility=1.1 or later
-Compiled file=FixList.chm
-Contents file=FixList.hhc
-Index file=FixList.hhk
+Compiled file=Fixlist.chm
+Contents file=Fixlist.hhc
+Index file=Fixlist.hhk
 Default topic=articles\overview.htm
 Display compile progress=Yes
 Error log file=log.txt

@@ -1,22 +1,22 @@
 {
   "name": "fixlist",
   "version": "1.0.0",
-  "description": "FixList",
+  "description": "Fixlist",
   "main": "index.js",
   "scripts": {
-    "test": "FixList.hhp",
+    "test": "Fixlist.hhp",
     "start": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DruDro/FixList.git"
+    "url": "git+https://github.com/DruDro/Fixlist.git"
   },
   "author": "DruDro",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DruDro/FixList/issues"
+    "url": "https://github.com/DruDro/Fixlist/issues"
   },
-  "homepage": "https://github.com/DruDro/FixList#readme",
+  "homepage": "https://github.com/DruDro/Fixlist#readme",
   "devDependencies": {
     "browser-sync": "^2.18.13",
     "cheerio": "^1.0.0-rc.2",

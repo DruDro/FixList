@@ -1,9 +1,9 @@
 $(function () {
 
     $("[data-fancybox]").fancybox({
-		// Options will go here
+  
     });
-    $("[data-fancybox]").on("mouseup touchend", function(e){
+    $("[data-fancybox]").on("mouseup mousedown click touchstart touchend", function(e){
         if($(window).width() < 768){
             e.preventDefault();
             e.stopPropagation();
