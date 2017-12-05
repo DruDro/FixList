@@ -67,8 +67,284 @@
 				</OBJECT>
 				<UL>				
 				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="AcceptInvite()">
+					<param name="Local" value="articles\AcceptInvite.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="AcceptSharedWishlist()">
+					<param name="Local" value="articles\AcceptSharedWishlist.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="AddProduct()">
+					<param name="Local" value="articles\AddProduct.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="AddWishlist()">
+					<param name="Local" value="articles\AddWishlist.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="AskForFriendship()">
+					<param name="Local" value="articles\AskForFriendship.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="AskForFriendshipByMail()">
+					<param name="Local" value="articles\AskForFriendshipByMail.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ChangeProductHashtags()">
+					<param name="Local" value="articles\ChangeProductHashtags.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ChangeProductName()">
+					<param name="Local" value="articles\ChangeProductName.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DeleteFriendship()">
+					<param name="Local" value="articles\DeleteFriendship.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DeleteMessage()">
+					<param name="Local" value="articles\DeleteMessage.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DeleteMessage()">
+					<param name="Local" value="articles\DeleteMessage.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DeleteProduct()">
+					<param name="Local" value="articles\DeleteProduct.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="DeleteWishlist()">
+					<param name="Local" value="articles\DeleteWishlist.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Dislike()">
+					<param name="Local" value="articles\Dislike.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetChat()">
+					<param name="Local" value="articles\GetChat.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetChatMessages()">
+					<param name="Local" value="articles\GetChatMessages.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetChats()">
+					<param name="Local" value="articles\GetChats.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetChatsWithUser()">
+					<param name="Local" value="articles\GetChatsWithUser.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFeed(skip)">
+					<param name="Local" value="articles\GetFeed-skip.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFeed()">
+					<param name="Local" value="articles\GetFeed.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFeedFromFriends(skip)">
+					<param name="Local" value="articles\GetFeedFromFriends-skip.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFeedFromFriends()">
+					<param name="Local" value="articles\GetFeedFromFriends.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFeedPopular(skip)">
+					<param name="Local" value="articles\GetFeedPopular-skip.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFeedPopular()">
+					<param name="Local" value="articles\GetFeedPopular.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFixlist()">
+					<param name="Local" value="articles\GetFixlist.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFixlistCaegories()">
+					<param name="Local" value="articles\GetFixlistCaegories.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFriends()">
+					<param name="Local" value="articles\GetFriends.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetFriendsWithInvites()">
+					<param name="Local" value="articles\GetFriendsWithInvites.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetInspo(skip)">
+					<param name="Local" value="articles\GetInspo-skip.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetInspo()">
+					<param name="Local" value="articles\GetInspo.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetInvitableUsers()">
+					<param name="Local" value="articles\GetInvitableUsers.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetInvites()">
+					<param name="Local" value="articles\GetInvites.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetMessages()">
+					<param name="Local" value="articles\GetMessages.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetProduct()">
+					<param name="Local" value="articles\GetProduct.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetProducts(skip)">
+					<param name="Local" value="articles\GetProducts-skip.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetProducts()">
+					<param name="Local" value="articles\GetProducts.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetProductsArchive()">
+					<param name="Local" value="articles\GetProductsArchive.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetProductWishlists()">
+					<param name="Local" value="articles\GetProductWishlists.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetProfile()">
+					<param name="Local" value="articles\GetProfile.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetTop()">
+					<param name="Local" value="articles\GetTop.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetUsersRelatedToWishlist()">
+					<param name="Local" value="articles\GetUsersRelatedToWishlist.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetWishlistAccessLevels()">
+					<param name="Local" value="articles\GetWishlistAccessLevels.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetWishlistFriends()">
+					<param name="Local" value="articles\GetWishlistFriends.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetWishlistFromInvitation()">
+					<param name="Local" value="articles\GetWishlistFromInvitation.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetWishlistProducts()">
+					<param name="Local" value="articles\GetWishlistProducts.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetWishlists()">
+					<param name="Local" value="articles\GetWishlists.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="GetWishlistSharedUsers()">
+					<param name="Local" value="articles\GetWishlistSharedUsers.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Like()">
+					<param name="Local" value="articles\Like.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="Login()">
+					<param name="Local" value="articles\Login-api.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="MarkMessagesAsReadBy()">
+					<param name="Local" value="articles\MarkMessagesAsReadBy.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="OnDisconnected()">
+					<param name="Local" value="articles\OnDisconnected.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ParseUrl()">
+					<param name="Local" value="articles\ParseUrl.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RegisterDevice()">
+					<param name="Local" value="articles\RegisterDevice.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="RemoveParticipant()">
+					<param name="Local" value="articles\RemoveParticipant.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SaveFixlistCategories()">
+					<param name="Local" value="articles\SaveFixlistCategories.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SearchFriends()">
+					<param name="Local" value="articles\SearchFriends.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SearchStringInChat()">
+					<param name="Local" value="articles\SearchStringInChat.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SendInvitations()">
+					<param name="Local" value="articles\SendInvitations.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SendMessage(url)">
+					<param name="Local" value="articles\SendMessage-url.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="SendMessage()">
 					<param name="Local" value="articles\SendMessage.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ShareProductToWishlists()">
+					<param name="Local" value="articles\ShareProductToWishlists.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ShareProductWithFriends()">
+					<param name="Local" value="articles\ShareProductWithFriends.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="ShareWishlistWithFriends()">
+					<param name="Local" value="articles\ShareWishlistWithFriends.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SkipTutorial()">
+					<param name="Local" value="articles\SkipTutorial.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="SubmitComplaint()">
+					<param name="Local" value="articles\SubmitComplaint.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UnregisterDevice()">
+					<param name="Local" value="articles\UnregisterDevice.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UpdateChatSelectedAt()">
+					<param name="Local" value="articles\UpdateChatSelectedAt.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UpdateProductAccepted()">
+					<param name="Local" value="articles\UpdateProductAccepted.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UpdateProfile()">
+					<param name="Local" value="articles\UpdateProfile.htm">
+					</OBJECT>
+				<LI> <OBJECT type="text/sitemap">
+					<param name="Name" value="UpdateWishlistSelectedAt()">
+					<param name="Local" value="articles\UpdateWishlistSelectedAt.htm">
 					</OBJECT>
 		</UL>
 </UL>
