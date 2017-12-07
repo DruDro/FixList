@@ -1,0 +1,44 @@
+@@include('../assets/partials/header.html', { "productTitle":"Fixlist", "title": "API", "subtitle":"DeleteMessage()", "type":"api"
+})
+
+
+
+
+<div class="article">
+
+    <div class="article__content">
+        <p>Remove selected message(messageId) from selected chat(chatId) if current user is the owner of this message. Also
+            this method notify all users from selected chat about deleting the message.</p>
+        <p>Return object with true or false ( true – success)
+        </p>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+        <ul>
+            <li>
+                <p>
+                    <b>chatId</b>
+                    <i>int</i>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>messageId</b>
+                    <i>int</i>
+                </p>
+            </li>
+
+        </ul>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/curly.png">
+            <a href="#" class="js-toggle-code collapsed">Signature</a>
+        </h3>
+        <pre class="wrap js-pre collapsed"><code>public BaseDTO DeleteMessage(int chatId, int messageId)</code></pre>
+    </div>
+
+
+</div>
+
+
+@@include('../assets/partials/footer.html')

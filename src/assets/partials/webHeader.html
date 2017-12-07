@@ -57,10 +57,10 @@
             min-width: 300px;
             vertical-align: top;
             overflow: auto;
-            position:relative;
-            z-index:2;
+            position: relative;
+            z-index: 2;
             transition: all .3s ease-in-out;
-                box-shadow: 0 0 40px -15px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 40px -15px rgba(0, 0, 0, 0.6);
         }
 
         .toc:hover {
@@ -76,7 +76,7 @@
         .toc h2 {
             padding: 0;
             display: table-cell;
-            text-align:center;
+            text-align: center;
             margin: 0;
             transition: all .15s ease-in-out;
         }
@@ -127,7 +127,7 @@
             padding: 4px 0;
             display: block;
             color: #454545;
-            cursor:pointer
+            cursor: pointer
         }
 
         .toc ul a:hover,
@@ -175,7 +175,7 @@
             height: 40px;
             border-radius: 0 25px 25px 0;
             box-shadow: 3px 0 5px 0px rgba(0, 0, 0, .5);
-            background-color: rgba(235, 235, 235, .8);
+            background-color: #fff;
             color: #454545;
             text-align: center;
             line-height: 40px;
@@ -190,6 +190,62 @@
             text-decoration: none;
         }
 
+        #alphabet {
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin: 0 0 15px;
+        }
+
+        #alphabet ul {
+            display: block;
+            text-align: center;
+        }
+
+        #alphabet ul li {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        #alphabet ul li span {
+            color: #ccc;
+            padding: 5px 8px;
+        }
+
+        #alphabet ul li a {
+            text-decoration: underline;
+            display: inline-block;
+            padding: 5px 8px;
+            transition: all .15s ease-in-out;
+            color: #c74900;
+            border-radius:50%;
+        }
+
+        #alphabet ul li a:hover {
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .45);
+        }
+
+        .indexLetter {
+            position: sticky !important;
+            top: -15px;
+            z-index: 9;
+            padding: 0 !important;
+        }
+
+        .toc h3 {
+            margin: 0;
+            color: #c74900;
+            display: inline-block;
+            padding: 0;
+            height: 40px;
+            text-align: center;
+            line-height: 40px;
+            width: 40px;
+            background: #fff;
+            border-radius: 50%;
+        }
+
         .frameholder {
             display: table-cell;
             position: relative;
@@ -197,7 +253,7 @@
             overflow: hidden;
             -webkit-overflow-scrolling: touch;
             overflow: auto;
-            height:100vh;
+            height: 100vh;
         }
 
         #article {
@@ -256,7 +312,6 @@
                 display: block;
             }
             .toc-toggle:hover {
-                background-color: rgba(235, 235, 235, 1);
                 box-shadow: 4px 0 6px 0px rgba(0, 0, 0, .5);
             }
             .toc-toggle:active {

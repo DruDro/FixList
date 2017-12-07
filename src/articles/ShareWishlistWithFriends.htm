@@ -1,0 +1,45 @@
+@@include('../assets/partials/header.html', { "productTitle":"Fixlist", "title": "API", "subtitle":"ShareWishlistWithFriends()",
+"type":"api" })
+
+
+
+
+<div class="article">
+
+    <div class="article__content">
+        <p>Method share fix list for users with id from 'friendsIds'. Also it notify users about fix list.</p>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+
+        <ul>
+
+            <li>
+                <p>
+                    <b>wishlistDto</b>
+                    <i>WishlistDTO</i>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>friendsIds</b>
+                    <i>List&lt;int&gt;</i>
+                </p>
+            </li>
+
+
+        </ul>
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/curly.png">
+            <a href="#" class="js-toggle-code collapsed">Signature</a>
+        </h3>
+        <pre class="wrap js-pre collapsed"><code>public async Task&lt;BaseDTO&gt; ShareWishlistWithFriends(WishlistDTO wishlistDto, List&lt;int&gt; friendsIds)
+            </code></pre>
+    </div>
+
+
+</div>
+
+
+@@include('../assets/partials/footer.html')

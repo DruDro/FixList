@@ -1,0 +1,36 @@
+@@include('../assets/partials/header.html', { "productTitle":"Fixlist", "title": "API", "subtitle":"AcceptSharedWishlist()", "type":"api" })
+
+
+
+
+<div class="article">
+
+    <div class="article__content">
+        <p>Set Accepted value to 'true' for current user's fixlist by wishlistId
+            <p>Return an object with true or false ( true – success)</p>
+            <p class="note">If user has some fix list shared to him from another user he can accept or not accept shared fix list.
+            </p>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+        <ul>
+            <li>
+                <p>
+                    <b>wishlistId</b>
+                    <i>int</i>
+                </p>
+            </li>
+        </ul>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/curly.png">
+            <a href="#" class="js-toggle-code collapsed">Signature</a>
+        </h3>
+        <pre class="wrap js-pre collapsed"><code>public BaseDTO AcceptSharedWishlist(int wishlistId)</code></pre>
+    </div>
+
+
+</div>
+
+
+@@include('../assets/partials/footer.html')

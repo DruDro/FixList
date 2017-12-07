@@ -1,0 +1,39 @@
+@@include('../assets/partials/header.html', { "productTitle":"Fixlist", "title": "API", "subtitle":"AddWishlist()", "type":"api" })
+
+
+
+
+<div class="article">
+
+    <div class="article__content">
+        <p>Method creates new wish list and share with list to users from argument 'friendsIds'</p>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+        <ul>
+            <li>
+                <p>
+                    <b>friendsIds</b>
+                    <i>List&lt;int&gt;</i>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>wishlist</b>
+                    <i>WishlistDTO</i>
+                </p>
+            </li>
+        </ul>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/curly.png">
+            <a href="#" class="js-toggle-code collapsed">Signature</a>
+        </h3>
+        <pre class="wrap js-pre collapsed"><code>public WishlistDTO AddWishlist(WishlistDTO wishlist, List<int> friendsIds)</code></pre>
+    </div>
+
+
+</div>
+
+
+@@include('../assets/partials/footer.html')

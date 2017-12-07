@@ -139,30 +139,6 @@
 					<param name="Local" value="articles\GetChatsWithUser.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="GetFeed(skip)">
-					<param name="Local" value="articles\GetFeed-skip.htm">
-					</OBJECT>
-				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="GetFeed()">
-					<param name="Local" value="articles\GetFeed.htm">
-					</OBJECT>
-				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="GetFeedFromFriends(skip)">
-					<param name="Local" value="articles\GetFeedFromFriends-skip.htm">
-					</OBJECT>
-				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="GetFeedFromFriends()">
-					<param name="Local" value="articles\GetFeedFromFriends.htm">
-					</OBJECT>
-				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="GetFeedPopular(skip)">
-					<param name="Local" value="articles\GetFeedPopular-skip.htm">
-					</OBJECT>
-				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="GetFeedPopular()">
-					<param name="Local" value="articles\GetFeedPopular.htm">
-					</OBJECT>
-				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="GetFixlist()">
 					<param name="Local" value="articles\GetFixlist.htm">
 					</OBJECT>
@@ -203,12 +179,12 @@
 					<param name="Local" value="articles\GetProduct.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="GetProducts(skip)">
-					<param name="Local" value="articles\GetProducts-skip.htm">
+					<param name="Name" value="GetProducts()">
+					<param name="Local" value="articles\GetProducts.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="GetProducts()">
-					<param name="Local" value="articles\GetProducts.htm">
+					<param name="Local" value="articles\GetProducts-skip.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="GetProductsArchive()">
@@ -271,10 +247,6 @@
 					<param name="Local" value="articles\OnDisconnected.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="ParseUrl()">
-					<param name="Local" value="articles\ParseUrl.htm">
-					</OBJECT>
-				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="RegisterDevice()">
 					<param name="Local" value="articles\RegisterDevice.htm">
 					</OBJECT>
@@ -299,7 +271,7 @@
 					<param name="Local" value="articles\SendInvitations.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="SendMessage(url)">
+					<param name="Name" value="SendMessage()">
 					<param name="Local" value="articles\SendMessage-url.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">

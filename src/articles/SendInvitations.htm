@@ -1,0 +1,58 @@
+@@include('../assets/partials/header.html', { "productTitle":"Fixlist", "title": "API", "subtitle":"SendInvitations()", "type":"api"
+})
+
+
+
+
+<div class="article">
+
+    <div class="article__content">
+        <p>Create invitations for selected emails from current user to selected emails.</p>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+
+        <ul>
+
+            <li>
+                <p>
+                    <b>emails</b>
+                    <i>List&lt;string&gt;</i>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>swishlistIds</b>
+                    <i>List&lt;int&gt;</i>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b> message = null</b>
+                    <i>string</i>
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    <b>wishlistId = null</b>
+                    <i>int?</i>
+                </p>
+            </li>
+
+        </ul>
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/curly.png">
+            <a href="#" class="js-toggle-code collapsed">Signature</a>
+        </h3>
+        <pre class="wrap js-pre collapsed"><code>public InvitationResultDTO SendInvitations(List&lt;string&gt; emails, List&lt;int&gt; swishlistIds, string message = null, int? wishlistId = null, int? productId = null)
+            </code></pre>
+    </div>
+
+
+</div>
+
+
+@@include('../assets/partials/footer.html')

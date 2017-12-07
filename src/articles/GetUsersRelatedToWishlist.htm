@@ -1,0 +1,38 @@
+@@include('../assets/partials/header.html', { "productTitle":"Fixlist", "title": "API", "subtitle":"GetUsersRelatedToWishlist()",
+"type":"api" })
+
+
+
+
+<div class="article">
+
+    <div class="article__content">
+        <p>return list of all users from selected fix list.
+
+        </p>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+
+        <ul>
+            <li>
+                <p>
+                    <b>wishlistId</b>
+                    <i>int</i>
+                </p>
+            </li>
+
+        </ul>
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/curly.png">
+            <a href="#" class="js-toggle-code collapsed">Signature</a>
+        </h3>
+        <pre class="wrap js-pre collapsed"><code>public IEnumerable&lt;SearchUserDTO&gt; GetUsersRelatedToWishlist(int wishlistId)
+            </code></pre>
+    </div>
+
+
+</div>
+
+
+@@include('../assets/partials/footer.html')

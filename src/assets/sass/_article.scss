@@ -126,6 +126,9 @@ pre {
         border-radius: 2px;
         border: 1px solid #ccc;
     }
+    &.wrap {
+        white-space:pre-wrap;
+    }
 }
 
 .js-toggle-code {

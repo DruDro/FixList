@@ -1,0 +1,40 @@
+@@include('../assets/partials/header.html', { "productTitle":"Fixlist", "title": "API", "subtitle":"AddProduct()", "type":"api" })
+
+
+
+
+<div class="article">
+
+    <div class="article__content">
+        <p>Add new product for fixlists with ids from 'wishlistIds' and notify client apps about receiving new products.
+            </p>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/params.png">Params</h3>
+        <ul>
+            <li>
+                <p>
+                    <b>wishlistIds</b>
+                    <i>List&lt;int&gt;</i>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <b>p</b>
+                    <i>Product</i>
+                </p>
+            </li>
+        </ul>
+
+        <h3 class="ref-title">
+            <img class="icon ref" src="../assets/images/icons/curly.png">
+            <a href="#" class="js-toggle-code collapsed">Signature</a>
+        </h3>
+        <pre class="wrap js-pre collapsed"><code>public async Task&lt;CollectionDTO&lt;ChatDTO&gt;&gt; AddProduct(List&lt;int&gt; wishlistIds, Product p)</code></pre>
+    </div>
+
+
+</div>
+
+
+@@include('../assets/partials/footer.html')
