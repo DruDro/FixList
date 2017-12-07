@@ -1,83 +1,323 @@
 @@include('../assets/partials/header.html', { "productTitle":"Fixlist", "title":"Fixlist API" })
 
-<div class="article__content">
+<div class="article__header">
+    <h2>Table of contents</h2>
     <ul>
-        <li>public WishlistDTO GetWishlistFromInvitation()</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetWishlistProducts(int wishlistId)</li>
-        <li>public WishlistDTO GetFixlist(int id)</li>
-        <li>public IEnumerable&lt;WishlistDTO&gt; GetWishlists()</li>
-        <li>public WishlistDTO AddWishlist(WishlistDTO wishlist, List&lt;int&gt; friendsIds)</li>
-        <li>public List&lt;FixlistCategoriesDTO&gt; GetFixlistCaegories(int fixlistId)</li>
-        <li>public BaseDTO SaveFixlistCategories(int fixlistId, List&lt;int&gt; categoryId)</li>
-        <li>public async Task&lt;bool&gt; DeleteWishlist(int wishlistId)</li>
-        <li>public void UpdateWishlistSelectedAt(int wishlistId)</li>
-        <li>public void UpdateChatSelectedAt(int chatId)</li>
-        <li>public BaseDTO AcceptSharedWishlist(int wishlistId)</li>
-        <li>public List&lt;KeyValuePair&lt;string, int&gt;&gt; GetWishlistAccessLevels()</li>
-        <li>public BaseDTO RemoveParticipant(int userId, int wishlistId)</li>
-        <li>public async Task&lt;BaseDTO&gt; ShareWishlistWithFriends(WishlistDTO wishlistDto, List&lt;int&gt; friendsIds)</li>
-        <li>public List&lt;int&gt; GetWishlistSharedUsers(int wishlistId)</li>
-        <li>public async Task&lt;CollectionDTO&lt;ChatDTO&gt;&gt; AddProduct(List&lt;int&gt; wishlistIds, Product p)</li>
-        <li>public BaseDTO UpdateProductAccepted(int productId, bool value)</li>
-        <li>public ProductDTO GetProduct(int productId)</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetProducts(int wishlistId)</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetProductsArchive(int skip)</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetProducts(int wishlistId, int skip)</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetFeed()</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetFeed(int skip)</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetFeedFromFriends()</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetFeedFromFriends(int skip)</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetFeedPopular()</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetFeedPopular(int skip)</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetInspo()</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetInspo(int skip)</li>
-        <li>public IEnumerable&lt;ProductDTO&gt; GetTop()</li>
-        <li>public async Task&lt;CollectionDTO&lt;ChatDTO&gt;&gt; ShareProductToWishlists(ProductDTO productDTO, List&lt;int&gt;
-            wishlistIds)</li>
-        <li>public CollectionDTO&lt;ChatDTO&gt; ShareProductWithFriends(ProductDTO productDTO, List&lt;int&gt; friendsIds)</li>
-        <li>public async Task&lt;bool&gt; Like(int productId)</li>
-        <li>public async Task&lt;bool&gt; Dislike(int productId)</li>
-        <li>public async Task&lt;bool&gt; DeleteProduct(int productId, int wishlistId)</li>
-        <li>public async Task&lt;BaseDTO&gt; ChangeProductName(int productId, string newName)</li>
-        <li>public async Task&lt;BaseDTO&gt; ChangeProductHashtags(int productId, string newHashtags)</li>
-        <li>public IEnumerable&lt;int&gt; GetProductWishlists(int productId)</li>
-        <li>public BaseDTO SubmitComplaint(int productId)</li>
-        <li>public BaseDTO RegisterDevice(int userId, string deviceToken)</li>
-        <li>public BaseDTO UnregisterDevice(int userId, string deviceToken)</li>
-        <li>public IEnumerable&lt;UserDTO&gt; GetFriendsWithInvites()</li>
-        <li>public IEnumerable&lt;UserDTO&gt; GetFriends()</li>
-        <li>public IEnumerable&lt;UserDTO&gt; GetInvites()</li>
-        <li>public IEnumerable&lt;WishlistFriendDTO&gt; GetWishlistFriends(int wishlistId)</li>
-        <li>public bool AskForFriendship(int toUserId)</li>
-        <li>public bool AskForFriendships(List&lt;int&gt; userIds)</li>
-        <li>public BaseDTO AskForFriendshipByMail(List&lt;string&gt; emails)</li>
-        <li>public IEnumerable&lt;SearchUserDTO&gt; SearchFriends(string searchString)</li>
-        <li>public IEnumerable&lt;SearchUserDTO&gt; GetInvitableUsers(string searchString)</li>
-        <li>public IEnumerable&lt;SearchUserDTO&gt; GetUsersRelatedToWishlist(int wishlistId)</li>
-        <li>public UserDTO AcceptInvite(int fromUserId)</li>
-        <li>public void DeleteFriendship(int friendId)</li>
-        <li>public InvitationResultDTO SendInvitations(List&lt;string&gt; emails, List&lt;int&gt; swishlistIds, string message
-            = null, int? wishlistId = null, int? productId = null)</li>
-        <li>public ChatDTO GetChat(int productId, int wishlistId)</li>
-        <li>public IEnumerable&lt;ChatDTO&gt; GetChats()</li>
-        <li>public ChatMessagesDTO GetChatMessages(int chatId, int timeZoneOffset)</li>
-        <li>public IEnumerable&lt;MessageDTO&gt; GetMessages(int chatId, int earliestMessageId, string searchString, int
-        timeZoneOffset = 0)</li>
-        <li>public async Task&lt;BaseDTO&gt; SendMessage(int chatId, string text, int timeZoneOffset, string temporaryId, List&lt;int&gt;
-            mentionedUserIds)</li>
-        <li>public async Task&lt;BaseDTO&gt; SendMessage(int chatId, string text, int timeZoneOffset, string temporaryId, List&lt;int&gt;
-            mentionedUserIds, string url)</li>
-        <li>public IEnumerable&lt;MessageDTO&gt; SearchStringInChat(int chatId, int currentMessageId, string searchString, int
-            timeZoneOffset = 0)</li>
-        <li>public BaseDTO DeleteMessage(int chatId, int messageId)</li>
-        <li>public void MarkMessagesAsReadBy(int chatId)</li>
-        <li>public IEnumerable&lt;ChatDTO&gt; GetChatsWithUser(int userId)</li>
-        <li>public UserDTO GetProfile()</li>
-        <li>public BaseDTO UpdateProfile(UserDTO user)</li>
-        <li>public UserDTO Login()</li>
-        <li>public override Task OnDisconnected(bool stopCalled)</li>
-        <li>public async Task&lt;ParseResultDTO&gt; ParseUrl(string url)</li>
-        <li>public void SkipTutorial()</li>
+        <li>
+            <p>
+                <a title="AcceptInvite()" href="AcceptInvite.htm">AcceptInvite()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="AcceptSharedWishlist()" href="AcceptSharedWishlist.htm">AcceptSharedWishlist()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="AddProduct()" href="AddProduct.htm">AddProduct()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="AddWishlist()" href="AddWishlist.htm">AddWishlist()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="AskForFriendship()" href="AskForFriendship.htm">AskForFriendship()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="AskForFriendshipByMail()" href="AskForFriendshipByMail.htm">AskForFriendshipByMail()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="ChangeProductHashtags()" href="ChangeProductHashtags.htm">ChangeProductHashtags()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="ChangeProductName()" href="ChangeProductName.htm">ChangeProductName()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="DeleteFriendship()" href="DeleteFriendship.htm">DeleteFriendship()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="DeleteMessage()" href="DeleteMessage.htm">DeleteMessage()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="DeleteMessage()" href="DeleteMessage.htm">DeleteMessage()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="DeleteProduct()" href="DeleteProduct.htm">DeleteProduct()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="DeleteWishlist()" href="DeleteWishlist.htm">DeleteWishlist()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="Dislike()" href="Dislike.htm">Dislike()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetChat()" href="GetChat.htm">GetChat()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetChatMessages()" href="GetChatMessages.htm">GetChatMessages()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetChats()" href="GetChats.htm">GetChats()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetChatsWithUser()" href="GetChatsWithUser.htm">GetChatsWithUser()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetFixlist()" href="GetFixlist.htm">GetFixlist()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetFixlistCaegories()" href="GetFixlistCaegories.htm">GetFixlistCaegories()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetFriends()" href="GetFriends.htm">GetFriends()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetFriendsWithInvites()" href="GetFriendsWithInvites.htm">GetFriendsWithInvites()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetInspo()" href="GetInspo-skip.htm">GetInspo()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetInspo()" href="GetInspo.htm">GetInspo()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetInvitableUsers()" href="GetInvitableUsers.htm">GetInvitableUsers()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetInvites()" href="GetInvites.htm">GetInvites()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetMessages()" href="GetMessages.htm">GetMessages()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetProduct()" href="GetProduct.htm">GetProduct()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetProducts()" href="GetProducts.htm">GetProducts()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetProducts()" href="GetProducts-skip.htm">GetProducts()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetProductsArchive()" href="GetProductsArchive.htm">GetProductsArchive()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetProductWishlists()" href="GetProductWishlists.htm">GetProductWishlists()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetProfile()" href="GetProfile.htm">GetProfile()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetTop()" href="GetTop.htm">GetTop()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetUsersRelatedToWishlist()" href="GetUsersRelatedToWishlist.htm">GetUsersRelatedToWishlist()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetWishlistAccessLevels()" href="GetWishlistAccessLevels.htm">GetWishlistAccessLevels()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetWishlistFriends()" href="GetWishlistFriends.htm">GetWishlistFriends()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetWishlistFromInvitation()" href="GetWishlistFromInvitation.htm">GetWishlistFromInvitation()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetWishlistProducts()" href="GetWishlistProducts.htm">GetWishlistProducts()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetWishlists()" href="GetWishlists.htm">GetWishlists()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="GetWishlistSharedUsers()" href="GetWishlistSharedUsers.htm">GetWishlistSharedUsers()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="Like()" href="Like.htm">Like()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="Login()" href="Login-api.htm">Login()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="MarkMessagesAsReadBy()" href="MarkMessagesAsReadBy.htm">MarkMessagesAsReadBy()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="OnDisconnected()" href="OnDisconnected.htm">OnDisconnected()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="RegisterDevice()" href="RegisterDevice.htm">RegisterDevice()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="RemoveParticipant()" href="RemoveParticipant.htm">RemoveParticipant()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="SaveFixlistCategories()" href="SaveFixlistCategories.htm">SaveFixlistCategories()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="SearchFriends()" href="SearchFriends.htm">SearchFriends()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="SearchStringInChat()" href="SearchStringInChat.htm">SearchStringInChat()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="SendInvitations()" href="SendInvitations.htm">SendInvitations()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="SendMessage()" href="SendMessage-url.htm">SendMessage()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="SendMessage()" href="SendMessage.htm">SendMessage()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="ShareProductToWishlists()" href="ShareProductToWishlists.htm">ShareProductToWishlists()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="ShareProductWithFriends()" href="ShareProductWithFriends.htm">ShareProductWithFriends()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="ShareWishlistWithFriends()" href="ShareWishlistWithFriends.htm">ShareWishlistWithFriends()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="SkipTutorial()" href="SkipTutorial.htm">SkipTutorial()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="SubmitComplaint()" href="SubmitComplaint.htm">SubmitComplaint()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="UnregisterDevice()" href="UnregisterDevice.htm">UnregisterDevice()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="UpdateChatSelectedAt()" href="UpdateChatSelectedAt.htm">UpdateChatSelectedAt()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="UpdateProductAccepted()" href="UpdateProductAccepted.htm">UpdateProductAccepted()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="UpdateProfile()" href="UpdateProfile.htm">UpdateProfile()</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                <a title="UpdateWishlistSelectedAt()" href="UpdateWishlistSelectedAt.htm">UpdateWishlistSelectedAt()</a>
+            </p>
+        </li>
     </ul>
 </div>
 

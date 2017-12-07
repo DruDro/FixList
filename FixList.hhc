@@ -107,10 +107,6 @@
 					<param name="Local" value="articles\DeleteMessage.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="DeleteMessage()">
-					<param name="Local" value="articles\DeleteMessage.htm">
-					</OBJECT>
-				<LI> <OBJECT type="text/sitemap">
 					<param name="Name" value="DeleteProduct()">
 					<param name="Local" value="articles\DeleteProduct.htm">
 					</OBJECT>
@@ -155,7 +151,7 @@
 					<param name="Local" value="articles\GetFriendsWithInvites.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
-					<param name="Name" value="GetInspo(skip)">
+					<param name="Name" value="GetInspo()">
 					<param name="Local" value="articles\GetInspo-skip.htm">
 					</OBJECT>
 				<LI> <OBJECT type="text/sitemap">
