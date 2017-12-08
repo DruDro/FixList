@@ -28,7 +28,7 @@
 				<param name="Local" value="articles\login.htm">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
-				<param name="Name" value="Create a Fixlist">
+				<param name="Name" value="Working with Fixlists">
 				<param name="Local" value="articles\create-fixlist.htm">
 				</OBJECT>
 			<LI> <OBJECT type="text/sitemap">
@@ -54,7 +54,6 @@
 		</UL>
 	<LI> <OBJECT type="text/sitemap">
 		<param name="Name" value="Developer Reference">
-		<param name="Local" value="articles\introduction.htm">
 		</OBJECT>
 		<UL>
 			<LI> <OBJECT type="text/sitemap">
