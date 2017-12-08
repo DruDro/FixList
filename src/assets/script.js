@@ -16,7 +16,7 @@ $(function () {
         e.preventDefault();
         e.stopPropagation;
         var link = $(this),
-            pre = link.parent().next('.js-pre');
+            pre = link.parent().next('.');
         if(link.hasClass('collapsed')){
             link.removeClass('collapsed');
             pre.slideDown(300);
