@@ -29,7 +29,7 @@
                 } else {
                     li.removeClass('closed').addClass('open');
                     li.children('ul').first().slideDown(300);
-                    if (!$(this).attr("href").length || $(this).attr("href") == "#") {
+                    if (!$(this).attr("href") || $(this).attr("href") == "#") {
                         e.preventDefault();
                     }
                 }
