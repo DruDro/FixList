@@ -1,3 +1,5 @@
+<div id="search">
+    <input type="text" class="autocomplete"><ul id="searchList"></ul></div>
 </div>
 <div class="overlay hidden"></div>
 <div class="frameholder">
@@ -11,7 +13,8 @@
         var tabLink = $(this),
             tab = $(tabLink.attr("href"));
         tabLink.addClass('active').closest('h2').siblings().children('a').removeClass('active');
-        tab.show().siblings('ul').hide();
+        tab.show().siblings('ul, #search').hide();
+        $(".autocomplete").focus();
     });
     $('.toc li').each(function () {
         var li = $(this);
@@ -94,6 +97,37 @@
         $('#index').prepend(HTMLAlphabet);
     }
     Index('#index');
+
+
+
+
+
+let indexList = document.querySelectorAll('#index li a[href]');
+let pages = [...indexList];
+pages = pages.filter(page => {
+    return page.getAttribute("href").indexOf('#') == -1;
+});
+let autocompleteInput = document.querySelector(".autocomplete");
+
+let autocompleteValue = autocompleteInput.value;
+
+autocompleteInput.addEventListener("input", showRes);
+let autoCompleteList = document.querySelector('#searchList');
+let autoList = pages.map(page => '<li data-page="' + page.getAttribute("href") + '"><i></i><a target="article" href="' + page.getAttribute("href") + '">'+ page.textContent +'</a></li>');
+autoCompleteList.innerHTML = autoList.toString().replace(/,/g, '');
+
+function showRes() {
+  autocompleteValue = autocompleteInput.value;
+  console.log(autocompleteValue);
+  let coutriesComplete = pages.filter(page => {
+    return page.textContent.toUpperCase().indexOf(autocompleteValue.toUpperCase()) !== -1 || page.getAttribute("href").substring(page.getAttribute("href").lastIndexOf('articles') + 1).toUpperCase().indexOf(autocompleteValue.toUpperCase()) !== -1
+  });
+  autoList = coutriesComplete.map(page => '<li data-page="' + page.getAttribute("href") + '"><i></i><a target="article" href="' + page.getAttribute("href") + '">'+ page.textContent +'</a></li>');
+  autoCompleteList.innerHTML = autoList.toString().replace(/,/g, '');
+}
+
+
+
 </script>
 </BODY>
 

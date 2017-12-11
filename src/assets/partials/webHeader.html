@@ -22,6 +22,7 @@
             display: block;
             width: 100vw;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:100%;
         }
 
         .wrapper {
@@ -82,20 +83,26 @@
         }
 
         .toc h2 a {
-            display: block;
             padding: 15px;
             font-weight: 400;
             text-decoration: none;
             color: #454545;
+            display:block;
+            height: 48px;
+                text-decoration: none;
+                background-size: 24px ;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition:all .15s ease-in-out;
         }
 
         .toc h2 a:hover,
         .toc h2 a:focus {
-            text-decoration: underline;
+            background-color:#fff;
         }
 
         .toc h2 a.active {
-            background: #fff;
+            background-color: #fff;
         }
 
         .toc ul {
@@ -107,10 +114,10 @@
 
         .toc ul li {
             position: relative;
-            padding: 0 0 0 18px;
+            padding: 0 0 0 22px;
         }
 
-        .toc>ul {
+        .toc>ul, #searchList {
             margin: 0;
             padding: 15px;
             display: block;
@@ -124,15 +131,20 @@
 
         .toc ul a {
             text-decoration: none;
-            padding: 4px 0;
-            display: block;
+            padding: 4px;
+            display: inline-block;
             color: #454545;
-            cursor: pointer
+            cursor: pointer;
+            transition:all .15s ease-in-out;
+            outline:0 #ebebeb;
         }
+        
+                .toc ul a:hover {
+                    outline:1px dashed #ebebeb;
+                }
 
-        .toc ul a:hover,
         .toc ul a:focus {
-            text-decoration: underline;
+            outline:1px dashed #454545;
         }
 
         .toc li>i {
@@ -145,7 +157,7 @@
             position: absolute;
             width: 30px;
             height: 30px;
-            left: -11px;
+            left: -6px;
             top: -2px;
             background-size: 50%;
             background-position: center;
@@ -268,6 +280,28 @@
             overflow: auto;
         }
 
+        #search {
+            display:none;
+        }
+        #searchList {
+            display:block;
+            list-style:none;
+            max-height: calc(100vh - 105px);
+        }
+        .autocomplete {
+            height: 37px;
+            border:0;
+            border-bottom:1px solid #ebebeb;
+            width:100%;
+            padding: 0 15px;
+            position:relative;
+            z-index:1;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:100%;
+        }
+        .autocomplete:focus{
+            box-shadow:0 0 5px 0 rgba(0,50,255,.5);
+        }
         @media print {
             .toc {
                 display: none;
@@ -336,18 +370,15 @@
             <a href="#" class="toc-toggle">☰</a>
             <div class="toc-header">
                 <h2>
-                    <a href="#toc" class="active">Contents</a>
+                    <a href="#toc" title="Table of Contents" class="active" style="background-image: url(./assets/images/icons/tree.png);">&nbsp;</a>
                 </h2>
                 <h2>
-                    <a href="#index">A&mdash;Z</a>
+                    <a href="#search" title="Search" style="background-image: url(./assets/images/icons/search.png);">&nbsp;</a>
                 </h2>
                 <h2>
-                    <a href="" onclick="printFrame()" style="    
-                display: inline-block;
-                text-decoration: none;
-                background-size: 70%;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-image: url(./assets/images/icons/icons8-print.png);">&nbsp;</a>
+                    <a href="#index" title="Index" style="background-image: url(./assets/images/icons/index.png);">&nbsp;</a>
+                </h2>
+                <h2>
+                    <a href="" title="Print" onclick="printFrame()" style="background-image: url(./assets/images/icons/icons8-print.png);">&nbsp;</a>
                 </h2>
             </div>
