@@ -16,6 +16,11 @@
         tab.show().siblings('ul, #search').hide();
         $(".autocomplete").focus();
     });
+    $('.toc a[href]').click(function(){
+            $('.toc a[href]').removeClass('active');
+            $(this).addClass('active');
+        }
+    );
     $('.toc li').each(function () {
         var li = $(this);
         li.prepend('<i></i>');
