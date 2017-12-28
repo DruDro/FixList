@@ -14,7 +14,12 @@
 <script>
     $(function () {
         if (window.location.toString().indexOf('?') !== -1) {
-            var url = window.location.toString().substring(window.location.toString().indexOf('?') + 1).replace('index.html', '');
+            var url = window.location
+                        .toString()
+                        .substring(window.location
+                            .toString()
+                            .indexOf('?') + 1)
+                            .replace('index.html', '');
             url = '/articles/' + url;
             document.getElementById('article').contentWindow.location = url;
         }
@@ -82,7 +87,7 @@
 
         $('.toc').addClass('hidden');
         $('.overlay').addClass('hidden');
-            $('.toc h2 a').removeClass('active');
+        $('.toc h2 a').removeClass('active');
     })
     function printFrame(e) {
         var beforePrint = function () {
@@ -137,7 +142,7 @@
 
     var indexList = $('#index li a[href]').toArray();
     var pages = indexList;
-console.log(pages);
+    console.log(pages);
     pages = pages.filter(function (page) {
         return page.getAttribute("href").indexOf('#') == -1;
     });
@@ -149,7 +154,7 @@ console.log(pages);
 
     var autoCompleteList = document.querySelector('#searchList');
     var autoList = pages
-        .map(function(page) { return '<li data-page="' + page.getAttribute("href") + '"><i></i><a target="article" href="' + page.getAttribute("href") + '">' + page.textContent + '</a></li>'; });
+        .map(function (page) { return '<li data-page="' + page.getAttribute("href") + '"><i></i><a target="article" href="' + page.getAttribute("href") + '">' + page.textContent + '</a></li>'; });
 
     autoCompleteList.innerHTML = autoList.toString().replace(/,/g, '');
 
@@ -168,8 +173,8 @@ console.log(pages);
 
         autoList = coutriesComplete
             .map(function (page) {
-                return '<li data-page="' + page.getAttribute("href") + '"><i></i><a target="article" href="' + page.getAttribute("href") + '">' + page.textContent + '</a></li>';            
-});
+                return '<li data-page="' + page.getAttribute("href") + '"><i></i><a target="article" href="' + page.getAttribute("href") + '">' + page.textContent + '</a></li>';
+            });
 
 
         autoCompleteList.innerHTML = autoList.toString().replace(/,/g, '');
