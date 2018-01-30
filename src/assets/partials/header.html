@@ -20,15 +20,15 @@
             <h1>
               <span class="product-logo">
                 <img src="../assets/images/logo.png" alt="" class="l">
-                <img src="../assets/images/logo.png" alt="" class="s">
+                <img src="../assets/images/logo-small.png" alt="" class="s">
               </span>
               <span class="article__title">
                 @@if(context.type == "api"){
-                    <span class="resource-title"><span class="product-title">@@productTitle</span>@@title</span>
+                    <span class="resource-title">@@title</span>
                     <br>@@subtitle</span>
                 }
                 @@if(context.type !== "api"){
-                  <span class="product-title">@@productTitle</span>@@title
+                  @@title
                 }
             </h1>
           </header>
